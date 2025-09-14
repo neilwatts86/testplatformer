@@ -925,6 +925,21 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::HasAnimationEnded"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "Animation"
+              ]
+            }
+          ],
+          "actions": []
         }
       ],
       "layers": [
