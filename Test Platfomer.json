@@ -168,6 +168,20 @@
         "preloadAsSound": true,
         "preloadInCache": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/1up 4.aac",
+        "kind": "audio",
+        "metadata": "",
+        "name": "5b9dbd5c0cfedf571cd35d2835046d6a1938afd71b18a3b1ab236144235819c7_1up 4.aac",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Arcade/Sound effects/1up/5b9dbd5c0cfedf571cd35d2835046d6a1938afd71b18a3b1ab236144235819c7_1up 4.aac",
+          "name": "gdevelop-asset-store"
+        }
       }
     ],
     "resourceFolders": []
@@ -199,7 +213,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.43357743047024067,
+        "zoomFactor": 0.6455105703311528,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -864,7 +878,7 @@
                 "",
                 "PickupCoin",
                 "",
-                "90",
+                "80",
                 "RandomFloatInRange(1,1.1)"
               ]
             }
@@ -875,12 +889,11 @@
           "conditions": [
             {
               "type": {
-                "value": "CollisionNP"
+                "value": "IsTurnedTowardObject"
               },
               "parameters": [
-                "Coins",
                 "Platformer_Character",
-                "",
+                "Coins",
                 "",
                 ""
               ]
@@ -889,12 +902,14 @@
           "actions": [
             {
               "type": {
-                "value": "ActivateBehavior"
+                "value": "PlaySound"
               },
               "parameters": [
-                "Platform_Ground",
-                "Platform",
-                "no"
+                "",
+                "5b9dbd5c0cfedf571cd35d2835046d6a1938afd71b18a3b1ab236144235819c7_1up 4.aac",
+                "",
+                "",
+                ""
               ]
             }
           ]
@@ -904,11 +919,11 @@
           "conditions": [
             {
               "type": {
-                "value": "SourisSurObjet"
+                "value": "SeDirige"
               },
               "parameters": [
                 "Platformer_Character",
-                "",
+                "JumpButton",
                 "",
                 ""
               ]
@@ -917,11 +932,11 @@
           "actions": [
             {
               "type": {
-                "value": "ChangeColor"
+                "value": "SceneBackground"
               },
               "parameters": [
-                "Platformer_Character",
-                "\"116;50;50\""
+                "",
+                "orange"
               ]
             }
           ]
