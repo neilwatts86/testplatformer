@@ -199,7 +199,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.6455105703311528,
+        "zoomFactor": 0.43357743047024067,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -864,8 +864,64 @@
                 "",
                 "PickupCoin",
                 "",
-                "80",
+                "90",
                 "RandomFloatInRange(1,1.1)"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Coins",
+                "Platformer_Character",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "Platform_Ground",
+                "Platform",
+                "no"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ChangeColor"
+              },
+              "parameters": [
+                "Platformer_Character",
+                "\"116;50;50\""
               ]
             }
           ]
