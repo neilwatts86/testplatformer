@@ -960,31 +960,16 @@
           "conditions": [
             {
               "type": {
-                "value": "CollisionNP"
+                "value": "Plan"
               },
               "parameters": [
-                "Coins",
-                "Platformer_Character",
-                "",
-                "",
-                ""
+                "Joystick",
+                "=",
+                "6"
               ]
             }
           ],
-          "actions": [
-            {
-              "type": {
-                "value": "PlaySound"
-              },
-              "parameters": [
-                "",
-                "d65e36da5759d0a48917cc9da8d57c792bc27ef6937dac4d050d7a0b6d304dc0_Run_10.wav",
-                "",
-                "",
-                ""
-              ]
-            }
-          ]
+          "actions": []
         }
       ],
       "layers": [
